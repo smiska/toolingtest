@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Documentation</title>
+  <meta name="description" content="With Bulletprooflist you can easily generate the bulletrproof email version of an HTML list.
+">
+
+  <!-- link rel="stylesheet" href="https://edmdesigner.github.io/bulletprooflist/css/images.css" -->
+  <link rel="stylesheet" href="https://edmdesigner.github.io/bulletprooflist/css/defaults.css">
+  <link rel="stylesheet" href="https://edmdesigner.github.io/bulletprooflist/css/layout.css">
+  <link rel="stylesheet" href="https://edmdesigner.github.io/bulletprooflist/css/components.css">
+  <link rel="stylesheet" href="https://edmdesigner.github.io/bulletprooflist/css/spacings.css">
+  <link rel="stylesheet" href="https://edmdesigner.github.io/bulletprooflist/css/main.css">
+  <link rel="stylesheet" href="https://edmdesigner.github.io/bulletprooflist/css/colors.css">
+  <link rel="stylesheet" href="https://edmdesigner.github.io/bulletprooflist/css/elements.css">
+  <link rel="canonical" href="http://localhost:4000https://edmdesigner.github.io/bulletprooflist/documentation/">
+  <link rel="alternate" type="application/rss+xml" title="Bulletprooflist" href="http://localhost:4000https://edmdesigner.github.io/bulletprooflist/feed.xml">
+</head>
+
+  <body class="bg-brown">
+
+    
+<header class="site-header">
+  <div id="header" class="bg-dark-brown">
+    <div id="menu" class="bg-white sm-padding-tb">
+      
+      <div class="container800">
+        
+        <div class="cols reorder">
+          <div class="w30p">
+            <a class="site-title" href="https://edmdesigner.github.io/bulletprooflist/"><img class="w200" src="https://edmdesigner.github.io/bulletprooflist/img/logo.png" /></a>
+            
+          </div>
+          
+          <div class="w70p cols">
+            <nav class="site-nav">
+              
+              <div class="trigger"> 
+                <a class="page-link" href="https://edmdesigner.com/drag-and-drop-responsive-email-editor-api">API</a>
+                <a class="page-link" href="https://edmdesigner.com/responsive-email-editor-for-end-users">APP</a>
+                <a class="page-link" href="https://edmdesigner.com/email-content-management-system">ECMS</a>
+                <a class="page-link" href="https://edmdesigner.com/jobs">JOBS</a>
+                <a class="page-link" href="https://blog.edmdesigner.com/">BLOG</a>
+                
+                
+                <a class="page-link" href="https://edmdesigner.github.io/bulletprooflist/documentation/">Documentation</a>
+                
+                
+                
+                
+                
+                
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/EDMdesigner/bulletprooflist">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" />
+      </a> 
+
+      
+    </div>
+    
+    <div id="hero" class="l-padding-tb">
+      <div class="container800">
+        <h1>Bulletprooflist</h1>
+        <p>
+            With Bulletprooflist you can easily generate the bulletrproof email version of an HTML list.
+
+        </p>
+        
+        <a class="button bg-red" href="https://github.com/EDMdesigner/bulletprooflist">
+          Fork me on Github
+        </a>
+      </div>
+    </div>
+    
+  </div>
+</header>
+  
+  
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Documentation</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="bulletprooflist">bulletprooflist</h1>
+
+<p>A universal tool to convert unordered and ordered lists in HTML file to bulletproof email HTML list by changing
+<code class="highlighter-rouge">ul</code>, <code class="highlighter-rouge">ol</code> and <code class="highlighter-rouge">li</code> elements to nested <code class="highlighter-rouge">table</code>s to consistent email client rendered view.</p>
+
+<p>INSTALLATION</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="nx">npm</span> <span class="nx">install</span> <span class="nx">bulletproofList</span>
+</code></pre>
+</div>
+
+<p>USAGE:</p>
+
+<div class="language-js highlighter-rouge"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">createBulletproofList</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">"bulletproofList"</span><span class="p">);</span>
+ <span class="kd">var</span> <span class="nx">yourHtml</span> <span class="o">=</span> <span class="s2">"&lt;h1&gt;Your HTML&lt;/h1&gt;&lt;ul&gt;&lt;li&gt;goes&lt;/li&gt;&lt;li&gt;here.&lt;/li&gt;&lt;/ul&gt;"</span><span class="p">;</span>
+
+<span class="kd">var</span> <span class="nx">OutputWithBulletproofList</span> <span class="o">=</span> <span class="nx">createBulletproofList</span><span class="p">(</span><span class="nx">yourHtml</span><span class="p">);</span>
+</code></pre>
+</div>
+<p><strong>yourHtml</strong> is the input HTML string</p>
+
+<p><strong>returns OutputWithBulletproofList</strong> containing the same text as in yourHtml, but with list converted to bulletproof 
+email HTML list</p>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <div id="footer" class="bg-gray sm-padding-tb center">
+		<div class="container600">
+			<div class="socials cols" style="display:flex;">
+        
+				<div class="w20p">
+					<a id="f-fb" href="https://facebook.com/edmdesigner">Facebook</a>
+        </div>
+        
+        
+				<div class="w20p">
+					<a id="f-tw" href="https://twitter.com/EDMdesigner">Twitter</a>
+        </div>
+                
+        
+				<div class="w20p">
+					<a id="f-ln" href="https://linkedin.com/company/edmdesigner-com">LinkedIn</a>
+        </div>
+        
+        
+				<div class="w20p">
+					<a id="f-gp" href="https://plus.google.com/EDMdesigner">Google+</a>
+        </div>
+        
+			</div>
+			<p>
+				2017 @ COPYRIGHT - EDMDESIGNER
+			</p>
+		</div>
+	</div>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-42954042-11', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+
+</html>
